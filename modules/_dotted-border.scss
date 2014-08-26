@@ -2,6 +2,11 @@
   $style: 3px dotted $col-brand-grey-lt;
   $bg-image: url('images/dot.svg');
 
+  $repeat: y;
+  @if $side == top or $side == bottom {
+    $repeat: x;
+  }
+
   @if $side == topBottom {
     background-image: $bg-image, $bg-image;
     background-position: top, bottom;
@@ -9,6 +14,6 @@
   } @else {
     background-image: $bg-image;
     background-position: $side;
-    background-repeat: repeat-y;
+    background-repeat: repeat-$repeat;
   }
 }
