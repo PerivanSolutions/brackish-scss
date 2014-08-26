@@ -14,6 +14,6 @@
   } @else {
     background-image: $bg-image;
     background-position: $side;
-    background-repeat: repeat-$repeat;
+    background-repeat: repeat-#{$repeat};
   }
 }
