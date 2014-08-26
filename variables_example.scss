@@ -1,0 +1,27 @@
+//
+// Top level colours
+// These need to be edited with each new colour scheme
+//
+$col-primary:        #a22;
+$col-primary-darker: #811;
+$col-nav-dropdown:   #444;
+$col-black:          #111;
+
+//
+// Second level colours
+// These will inherit from top level
+//
+// Typography colours
+$col-text:       $col-black;
+$col-link:       $col-primary;
+$col-link-hover: $col-primary-darker;
+$col-h2h3h4:     $col-primary;
+
+// Major layout colours
+$col-colored-block: $col-primary;
+$col-footer-bg:     $col-text;
+
+// Misc bits colours
+$col-quote:                $col-primary;
+$col-page-first-paragraph: $col-primary-darker;
+$col-center-tag-separator: $col-primary;
