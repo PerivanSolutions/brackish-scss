@@ -1,23 +1,28 @@
-html, body {
+html,
+body {
+  height: 100%;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
+
 .page {
   @include outer-container;
-  padding: 0 $page-content-horizontal-padding;
   // For moving footer to bottm
-  min-height: 100%;
   margin-bottom: -$footer-height - $footer-margin-top;
+  min-height: 100%;
+  padding: 0 $page-content-horizontal-padding;
+
   @include media($break-mid) {
     margin-bottom: -$footer-height--break-mid - $footer-margin-top;
   }
 }
+
 .page:after {
+  content: '';
+  display: block;
   height: $footer-height;
+
   @include media($break-mid) {
     height: $footer-height--break-mid;
   }
-  content: "";
-  display: block;
 }

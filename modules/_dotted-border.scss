@@ -6,23 +6,19 @@
     background-image: $bg-image;
     background-position: top;
     background-repeat: repeat-x;
-  }
-  @else if $side == right {
+  } @else if $side == right {
     background-image: $bg-image;
     background-position: right;
     background-repeat: repeat-y;
-  }
-  @else if $side == bottom {
+  } @else if $side == bottom {
     background-image: $bg-image;
     background-position: bottom;
     background-repeat: repeat-x;
-  }
-  @else if $side == left {
+  } @else if $side == left {
     background-image: $bg-image;
     background-position: left;
     background-repeat: repeat-y;
-  }
-  @else if $side == topBottom {
+  } @else if $side == topBottom {
     background-image: $bg-image, $bg-image;
     background-position: top, bottom;
     background-repeat: repeat-x, repeat-x;

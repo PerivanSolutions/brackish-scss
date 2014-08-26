@@ -1,21 +1,26 @@
 .page__title {
   @include dotted-border(bottom);
-  padding-bottom: 0.2em;
+  padding-bottom: .2em;
+
   @include media($break-mid) {
     @include colored-block;
-    border: none;
+    border: 0;
+    padding: .3em;
     text-align: center;
-    padding: 0.3em;
   }
 }
+
 .page__content {
   @include clearfix;
   padding-bottom: 1em;
-  > ul, > p {
+
+  > ul,
+  > p {
     max-width: 70%;
   }
+
   > p:first-of-type {
-    font-weight: bold;
     color: $col-page-first-paragraph;
+    font-weight: bold;
   }
 }

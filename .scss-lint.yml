@@ -1,2 +1,2 @@
 exclude:
-  - '_scss/theme/vendor/**'
+  - 'vendor/**'
