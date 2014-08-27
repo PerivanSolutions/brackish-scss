@@ -1,5 +1,4 @@
 @mixin dotted-border($side: top) {
-  $style: 3px dotted $col-brand-grey-lt;
   $bg-image: url('images/dot.svg');
 
   $repeat: y;
