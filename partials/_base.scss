@@ -8,12 +8,12 @@ body {
 .page {
   @include outer-container;
   // For moving footer to bottm
-  margin-bottom: -$footer-height - $footer-margin-top;
+  margin-bottom: -$footer-height;
   min-height: 100%;
-  padding: 0 $page-content-horizontal-padding;
+  padding: 0 $page-content-horizontal-padding 1.5em;
 
   @include media($break-mid) {
-    margin-bottom: -$footer-height--break-mid - $footer-margin-top;
+    margin-bottom: -$footer-height--break-mid;
   }
 }
 
