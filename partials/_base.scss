@@ -5,6 +5,10 @@ body {
   padding: 0;
 }
 
+img {
+  border-style: none;
+}
+
 .page {
   @include outer-container;
   // For moving footer to bottm
