@@ -1,5 +1,8 @@
-@mixin dotted-border($side: top) {
+@mixin dotted-border($side: top, $color: false) {
   $bg-image: url('images/dot.svg');
+  @if $color {
+    $bg-image: url('images/dot_#{$color}.svg');
+  }
 
   $repeat: y;
   @if $side == top or $side == bottom {
