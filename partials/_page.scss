@@ -1,3 +1,4 @@
+%page__title,
 .page__title {
   @include dotted-border(bottom);
   padding-bottom: .2em;
@@ -10,6 +11,7 @@
   }
 }
 
+%page__content,
 .page__content {
   @include clearfix;
   padding-bottom: 1em;

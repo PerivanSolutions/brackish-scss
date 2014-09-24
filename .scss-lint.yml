@@ -1,2 +1,7 @@
 exclude:
   - 'vendor/**'
+
+linters:
+  NameFormat:
+    enabled: false
+    convention: BEM
