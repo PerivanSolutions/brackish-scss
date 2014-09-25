@@ -1,11 +1,4 @@
-.post__content {
-  @extend %page__content;
-}
-
-.post__title {
-  @extend %page__title;
-}
-
+.post__content,
 .posts-list {
   @include span-columns(9);
 
@@ -37,8 +30,26 @@
 }
 
 .post-summary__author,
-.post-summary__date {
+.post-summary__date,
+.post__author,
+.post__date {
   color: #555;
+  font-family: $font-family-serif;
   font-size: .9em;
 }
 
+.post__share-buttons {
+  background: #f7fafe;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  height: 28px;
+  padding: 3px 0;
+  text-align: right;
+
+  .share__email {
+    bottom: 5px;
+    font-family: $font-family-serif;
+    padding-right: 1em;
+    position: relative;
+  }
+}
