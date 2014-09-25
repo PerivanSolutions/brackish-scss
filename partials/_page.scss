@@ -31,7 +31,7 @@
     font-weight: bold;
   }
 
-  img {
+  > img {
     float: right;
 
     @include media($break-mid) {
