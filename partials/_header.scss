@@ -7,9 +7,15 @@
   position: relative;
 
   // Logo
-  img {
+  a:nth-child(1) {
     display: inline-block;
+    height: 41px;
     max-width: 48%;
+
+    img {
+      display: inline-block;
+      width: 100%;
+    }
   }
 
   // Contact text to right of logo
@@ -31,7 +37,8 @@
   @include media($break-mid) {
     text-align: center;
 
-    img {
+    // Logo
+    a:nth-child(1) {
       max-width: 90%;
     }
 
