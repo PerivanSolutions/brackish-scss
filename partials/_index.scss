@@ -7,25 +7,34 @@
   @include colored-block;
   @include clearfix;
 
-  aside {
-    float: right;
-    height: 100%;
-    max-width: 55%;
+  background-image: url('/images/index-mural.jpg');
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 47% auto;
+  min-height: 240px;
+  position: relative;
 
-    @include media($break-mid) {
-      max-width: 43%;
-    }
+  @include media($break-small) {
+    $index-mural-image-height: 300px;
+
+    background-position: 50% 0;
+    background-size: auto $index-mural-image-height;
+    padding-top: $index-mural-image-height;
+  }
+
+  .index__mural__credit {
+    font-family: $font-family-serif;
+    font-size: .9em;
+    position: absolute;
+    right: .3em;
+    top: .3em;
+  }
+
+  section {
+    max-width: 50%;
 
     @include media($break-small) {
-      float: none;
       max-width: 100%;
-    }
-
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
     }
   }
 }
