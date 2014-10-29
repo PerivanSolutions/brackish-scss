@@ -16,8 +16,11 @@
 .footer__nav,
 .footer__details {
   @include outer-container;
-  color: $col-footer-fg;
   padding: .3em;
+
+  * {
+    color: $col-footer-fg;
+  }
 }
 
 .footer__nav {
