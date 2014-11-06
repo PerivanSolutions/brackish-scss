@@ -1,10 +1,12 @@
 %page__title,
 .page__title {
   @include dotted-border(bottom);
-  padding-bottom: .2em;
+
+  padding-bottom: 10px;
 
   @include media($break-mid) {
     @include colored-block;
+
     border: 0;
     padding: .3em;
     text-align: center;
@@ -14,7 +16,8 @@
 %page__content,
 .page__content {
   @include clearfix;
-  padding-bottom: 1em;
+
+  padding: 1em 0;
 
   > ul,
   > ol,
@@ -31,6 +34,7 @@
     font-weight: bold;
   }
 
+  > video,
   > img {
     float: right;
 
