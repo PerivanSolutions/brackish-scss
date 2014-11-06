@@ -1,6 +1,7 @@
 .footer {
   background: $col-footer-bg;
   height: $footer-height;
+  padding-top: 10px;
 
   @include media($break-mid) {
     height: $footer-height--break-mid;
