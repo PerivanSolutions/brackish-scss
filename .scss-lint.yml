@@ -2,6 +2,7 @@ exclude:
   - 'vendor/**'
 
 linters:
+  SelectorFormat:
+    convention: BEM
   NameFormat:
     enabled: false
-    convention: BEM
