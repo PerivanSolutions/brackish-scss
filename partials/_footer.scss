@@ -28,7 +28,7 @@
   display: block;
 
   h3 {
-    color: $col-footer-fg;;
+    color: $col-footer-fg;
     display: inline-block;
   }
 
@@ -36,7 +36,7 @@
     @include span-columns(3);
 
     ul {
-      color: $col-footer-fg;;
+      color: $col-footer-fg;
       display: inline-block;
       list-style: none;
       margin-top: 0;
@@ -45,7 +45,7 @@
   }
 
   a {
-    color: $col-footer-fg;;
+    color: $col-footer-fg;
   }
 
   @include media($break-mid) {
@@ -57,7 +57,7 @@
   text-align: center;
 
   p {
-    color: $col-footer-fg;;
+    color: $col-footer-fg;
     display: inline-block;
     margin: 0;
 
