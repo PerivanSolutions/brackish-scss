@@ -1,8 +1,9 @@
-@mixin colored-block() {
+@mixin colored-block($bg-color:   $col-colored-block,
+                     $text-color: $col-colored-block-text) {
   padding: .5em 1.5em;
-  background: $col-colored-block;
+  background: $bg-color;
   border-radius: $corner-radius; 
-  color: $col-colored-block-text;
+  color: $text-color;
 
   @include media($break-small) {
     border-radius: 0;
