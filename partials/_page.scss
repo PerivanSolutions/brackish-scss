@@ -26,7 +26,11 @@
   > h4,
   > ul,
   > p {
-    max-width: 700px;
+    @if variable-exists('page-content-max-width') {
+      max-width: $page-content-max-width;
+    } @else {
+      max-width: 700px;
+    }
   }
 
   > p:first-of-type {
