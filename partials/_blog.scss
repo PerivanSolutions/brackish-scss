@@ -5,6 +5,13 @@
   @include media($break-mid) {
     @include span-columns(12);
   }
+
+  img,
+  video {
+    display: block;
+    margin: 15px auto;
+    max-width: 90%;
+  }
 }
 
 .post__title {
